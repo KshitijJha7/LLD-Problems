@@ -19,7 +19,7 @@ public class PersistanceService {
     public void saveDocument(DocEditorService editorService){
         Document doc = editorService.getDocument();
         String data = codecStrategy.serialize(doc);
-        saveStrategy.save(data);
+        saveStrategy.save(data,doc.getName());
     }
     public void loadDocument(DocEditorService editorService, String path){
         // extract name from path

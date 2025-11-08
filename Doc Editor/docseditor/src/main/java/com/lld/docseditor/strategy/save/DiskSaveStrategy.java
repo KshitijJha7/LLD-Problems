@@ -1,10 +1,9 @@
 package com.lld.docseditor.strategy.save;
-import com.lld.docseditor.models.Document;
 import java.io.FileWriter;
 public class DiskSaveStrategy implements SaveStrategy {
-    public void save(String content) {
+    public void save(String content,String path) {
         try {
-            FileWriter writer = new FileWriter("document.txt");
+            FileWriter writer = new FileWriter(path);
             writer.write(content);
             writer.close();
         } catch (Exception e) {

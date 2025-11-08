@@ -13,15 +13,10 @@ public class Document {
         elements.add(element);
     }
 
-    public String render(){
-        StringBuilder sb = new StringBuilder();
-        for(DocumentElement element : elements){
-            sb.append(element.render());
-            sb.append("\n");
-        }
-        return sb.toString();
+    public String getName(){
+        return name;
     }
-
+    
     public ArrayList<DocumentElement> getElements(){
         return elements;
     }
