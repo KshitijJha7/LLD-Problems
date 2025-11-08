@@ -1,7 +1,6 @@
-package com.lld.docseditor.service.persistance;
+package com.lld.docseditor.service;
 
 import com.lld.docseditor.models.Document;
-import com.lld.docseditor.service.DocEditorService;
 import com.lld.docseditor.strategy.codec.*;
 import com.lld.docseditor.strategy.save.*;
 import com.lld.docseditor.strategy.load.*;
